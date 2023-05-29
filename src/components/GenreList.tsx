@@ -6,7 +6,7 @@ const GenreList = () => {
     return (
         <ul>
             {data.map((genre) => (
-                <li>
+                <li key={genre.id}>
                     {genre.name}
                 </li>
             ))}
